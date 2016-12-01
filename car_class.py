@@ -5,7 +5,7 @@
 
 class Car(object):
 
-	def __init__(self):
+	def __init__(self, color, engine_type, number_doors, transimission):
 		self.color = color
 		self.engine_type = engine_type
 		self.number_doors = number_doors;
