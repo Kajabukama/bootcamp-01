@@ -6,7 +6,16 @@ class Car(object):
 		self.ctype = ctype
 		self.model = model
 
-	def __init__(self):
-		pass
 
 
+def find_details():
+
+	honda = Car('Honda','HND-9009','Verrosa')
+
+	if isinstance(honda, Car):
+		return 'The object should be an instance of the `Car` class'
+
+	if type(honda) is Car:
+		return 'The object should be a type of `Car`'
+
+print find_details()
